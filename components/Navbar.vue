@@ -1,7 +1,15 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand>NavBar</b-navbar-brand>
+    <b-navbar toggleable="sm" type="dark" variant="dark">
+      <b-navbar-brand>
+        <img
+          src="/banner-ico.png"
+          class="p-1 align-top"
+          width="35"
+          height="35"
+          alt="Kitten"
+        />SpotiApp</b-navbar-brand
+      >
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 

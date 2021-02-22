@@ -2,7 +2,7 @@
   <div>
     <b-card
       :title="item.name"
-      :img-src="item.images[0].url"
+      :img-src="item.images.length ? item.images[0].url : noImage"
       :img-alt="item.name"
       img-top
       style="max-width: 20rem"
@@ -26,9 +26,18 @@ export default {
     // eslint-disable-next-line vue/require-default-prop
     item: { type: Object },
   },
+  data() {
+    return {
+      noImage: 'no-image.png',
+    }
+  },
   methods: {
     verRelease(release) {
-      this.$router.push(`artistas/${release.artists[0].id}`)
+      if (release.type === 'album') {
+        this.$router.push(`artistas/${release.artists[0].id}`)
+      } else {
+        this.$router.push(`artistas/${release.id}`)
+      }
     },
   },
 }

@@ -29,14 +29,9 @@ export default {
   },
   methods: {
     async obtenerReleases() {
-      const config = {
-        headers: {
-          authorization: this.$store.state.token,
-        },
-      }
       const res = await axios.get(
         'https://api.spotify.com/v1/browse/new-releases?country=US&limit=20',
-        config
+        this.$store.state.configHeader
       )
       this.releases = res.data.albums.items
     },
