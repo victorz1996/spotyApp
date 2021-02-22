@@ -55,7 +55,7 @@ export default {
       if (value && value.images.length) {
         return value.images[0].url
       } else {
-        return this.noImage
+        return '/no-image.png'
       }
     },
   },
