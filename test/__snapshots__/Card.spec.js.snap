@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card HTMl renderizado structure esperada 1`] = `
+<div>
+  <b-card-stub
+    bodytag="div"
+    class="mb-2 puntero"
+    footertag="div"
+    headertag="div"
+    imgsrc="no-image.png"
+    imgtop="true"
+    style="max-width: 20rem;"
+    subtitletag="h6"
+    subtitletextvariant="muted"
+    tag="div"
+    titletag="h4"
+  >
+    <b-card-text-stub
+      texttag="p"
+    />
+  </b-card-stub>
+</div>
+`;

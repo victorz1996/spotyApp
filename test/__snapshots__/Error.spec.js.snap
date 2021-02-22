@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error HTMl renderizado structure esperada 1`] = `
+<div>
+  <div
+    class="alert alert-danger"
+  >
+    <h3>
+      Error
+    </h3>
+     
+    <p>
+      Error
+    </p>
+  </div>
+</div>
+`;

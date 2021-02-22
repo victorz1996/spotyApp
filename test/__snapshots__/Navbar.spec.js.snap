@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar HTMl renderizado structure esperada 1`] = `
+<div>
+  <b-navbar-stub
+    tag="nav"
+    toggleable="sm"
+    type="dark"
+    variant="dark"
+  >
+    <b-navbar-brand-stub
+      tag="div"
+      target="_self"
+    >
+      <img
+        alt="Kitten"
+        class="p-1 align-top"
+        height="35"
+        src="/banner-ico.png"
+        width="35"
+      />
+      SpotiApp
+    </b-navbar-brand-stub>
+     
+    <b-navbar-toggle-stub
+      label="Toggle navigation"
+      target="nav-collapse"
+    />
+     
+    <b-collapse-stub
+      id="nav-collapse"
+      isnav="true"
+      tag="div"
+    >
+      <b-navbar-nav-stub
+        tag="ul"
+      >
+        <b-nav-item-stub
+          linkattrs="[object Object]"
+          target="_self"
+        >
+          Home
+        </b-nav-item-stub>
+         
+        <b-nav-item-stub
+          linkattrs="[object Object]"
+          target="_self"
+        >
+          Buscar
+        </b-nav-item-stub>
+      </b-navbar-nav-stub>
+    </b-collapse-stub>
+  </b-navbar-stub>
+</div>
+`;

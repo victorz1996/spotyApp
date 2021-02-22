@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading HTMl renderizado structure esperada 1`] = `
+<div
+  class="d-flex justify-content-center mb-3"
+>
+  <b-spinner-stub
+    label="Large Spinner"
+    role="status"
+    style="width: 3rem; height: 3rem;"
+    tag="span"
+    type="border"
+  />
+</div>
+`;
