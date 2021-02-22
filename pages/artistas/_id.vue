@@ -52,10 +52,8 @@ export default {
   },
   filters: {
     image(value) {
-      if (value) {
-        if (value.images.length > 0) {
-          return value.images[0].url
-        }
+      if (value && value.images.length) {
+        return value.images[0].url
       } else {
         return this.noImage
       }
@@ -112,7 +110,6 @@ export default {
         this.$store.state.configHeader
       )
       this.topTracks = this.parsearData(res.data.tracks)
-      console.log(res.data.tracks, 'sjdkasjdksajkdl')
     },
     parsearData(tracks) {
       const tracksParced = []
